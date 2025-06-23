@@ -1,0 +1,13 @@
+html,
+body {
+  background-color: white;
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #1a202c;
+    color: white;
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Refined Chrome",
+  "version": "1.0",
+  "description": "Refined Chrome",
+  "permissions": [
+    "clipboardWrite",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "backgrounds_background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "content_scripts_main.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "Refined Chrome"
+  }
+}
