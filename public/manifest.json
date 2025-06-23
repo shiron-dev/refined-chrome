@@ -5,7 +5,9 @@
   "description": "Refined Chrome",
   "permissions": [
     "clipboardWrite",
-    "activeTab"
+    "activeTab",
+    "theme",
+    "tabs"
   ],
   "host_permissions": [
     "https://*/*"
@@ -31,5 +33,13 @@
   },
   "action": {
     "default_title": "Refined Chrome"
+  },
+  "commands": {
+    "copy-current-tab-url": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C"
+      },
+      "description": "Copy current tab URL to clipboard"
+    }
   }
 }
